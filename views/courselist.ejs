@@ -1,0 +1,30 @@
+<h1>The Resulting Games of Your Search are</h1>
+<hr>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>steamURL</th>
+            <th>Publisher</th>
+            <th>Genre</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    <% for (game of games) {
+        const title = game.title;
+        const steamURL = game['steamURL'];
+        const publisher = game['publisher'];
+        const genre = game['genres'];
+        const status = game['status'];
+         %>
+      <tr class="mb-2"> 
+        <td><%=title %></td>
+        <td><%=steamURL %></td>
+        <td><%=publisher %></td>
+        <td><%=genre %></td>
+        <td><%=status %></td>
+    <% } %>
+    </tbody>
+</table>
+

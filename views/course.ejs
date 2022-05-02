@@ -1,0 +1,19 @@
+<div class="bg-light m-5 p-2 border border-primary border-2">
+    <div class="">
+        <span>
+            <%= game['publisher'] %> 
+            <%= game['steamURL'] %> 
+        </span>
+        <strong><%= game['name'] %></strong>
+
+        
+    </div>
+    <div><a href="/addCourse/<%= game['_id'] %>">(add to schedule)</a></div>
+
+
+<hr>
+
+<pre>
+    <%= JSON.stringify(course,null,5) %>
+</pre>
+-->

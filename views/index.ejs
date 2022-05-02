@@ -1,0 +1,57 @@
+
+<div style = "background-color: aqua;">
+    <div class="jumbotron">
+        <h1>CPA03 Find Video Games on Steam</h1>
+        <p></p>
+    </div>
+
+    <p class="p-1 m-1 border border-primary bg-light" style = "text-align: center ;font-size:30px">
+        Finding video games to play can be a chore. Here this app helps you looks for games on one of the most popular video game platforms, Steam. Here you can search by name or search by publisher. 
+        You can also see the availability of the game if it is downloadable on Steam.
+    </p>
+    
+    <% if (true) {%>  
+        
+        <form method="post" action="/games/byName" class="p-3 m-3 border border-primary bg-light">
+            
+            Show games by name: 
+              <input type="text" name="title" 
+                     placeholder="e.g. Apex legends">
+            <input type="submit">
+        </form>
+        
+        <form method="post" action="/games/byPublisher" class="p-3 m-3 border border-primary bg-light">
+            Show games by Publisher: 
+              <input type="text" name="publisher" 
+                     placeholder="e.g. Activision">
+            <input type="submit">
+        </form>
+
+        <form method="post" action="/games/byGenre" class="p-3 m-3 border border-primary bg-light">
+            Show games by Genre: 
+              <input type="text" name="genre" 
+                     placeholder="e.g. Action">
+            <input type="submit">
+        </form>
+        <br>
+    <% } %>
+</div>  
+
+
+
+    <!--        <form method="post" action="/courses/by">
+        <form method="post" action="/courses/byInst">
+            Show Courses by Instructor Email: 
+            <input type="text" name="email" 
+                   placeholder="e.g. tjhickey">
+            <input type="submit">
+        </form>
+        <br>
+        <form method = "post" action = "/courses/byKeyword">
+            Show Course by byKeyword
+            <input type ="text" name = "keyword" placeholder="e.g. Data">
+            <input type = "submit">
+        </form>
+    -->
+
+
